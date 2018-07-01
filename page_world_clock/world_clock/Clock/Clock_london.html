@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Clock_london.css">
+        <meta charset="utf8">
+
+        <script type="text/javascript" src="Clock_london.js"></script>
+
+    </head>
+    <body onload = "init()">
+        <div id="aBox">
+        <canvas id="clock" class="clock" width="900px" height="900px"  >
+        </canvas>
+        <p id="time"></p>
+        </div>
+
+        <div id="bBox" >
+           London <br>         <!--ここだぞここ-->
+
+        <div id="b1Box" >
+               <script>
+        var japan =(new Date()).getTime();
+        var now = new Date( japan + jisa*60*60*1000 );
+          var year = now.getFullYear();
+          var month= now.getMonth();
+          var day  = now.getDate();
+
+          var mNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          var month = mNames[month] ;
+          var str =  month+" "+ day +" "+ year;
+           document.getElementById('b1Box').innerHTML= str; </script>
+            </div>
+            </div>
+
+
+
+
+    </body>
+</html>
