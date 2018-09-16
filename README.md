@@ -3,7 +3,7 @@
 ## 言語とスキル
 - Python (データ整形, 学習系)
 - PHP (バックエンド)
-- java script, HTML, CSS(ホームページ作成時)
+- JavaScript, HTML, CSS(ホームページ作成時)
 - Linux, Docker(勉強中です)
 
 
