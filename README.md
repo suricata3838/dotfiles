@@ -3,12 +3,12 @@
 ## 言語とスキル
 - Python (データ整形, 学習系)
 - PHP (バックエンド)
-- java script, HTML, CSS(ホームページ作成時)
+- JavaScript, HTML, CSS(ホームページ作成時)
 - Linux, Docker(勉強中です)
 
 
 - Bitcoinの知識 (特にセカンドレイヤー技術のライトニングネットワークなど)
-	- titterアカウント : [@ln_bitgirl](https://twitter.com/ln_bitgirl)
+	- twitterアカウント : [@ln_bitgirl](https://twitter.com/ln_bitgirl)
 - Ethereumを勉強中です
 
 ## 学歴・職歴
