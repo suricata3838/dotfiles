@@ -43,6 +43,7 @@ colorscheme OceanicNext
 
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
+let g:ale_set_highlights = 0
 
 " vim-airline-themes
 let g:airline_theme = 'wombat'
@@ -55,3 +56,23 @@ set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
+
+" fzf
+set rtp+=~/.fzf
+nmap <C-f> :FZF<cr>
+
+" Ag seaarch
+nmap <C-a> :Ag<cr>
+" Rg seearcg
+nmap <C-r> :Rg<cr>
+
+let g:fzf_action = {
+\ 'ctrl-o': 'tab split'
+\ }
+
+command! -bang -nargs=* Rg
+\ call fzf#vim#grep(
+\ 'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
+\ <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+\ : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
+\ <bang>0)
