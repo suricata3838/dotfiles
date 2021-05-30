@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/norikakizawa/Projects/programmingBitcoin/scriptless_script/node_modules/elliptic/lib/elliptic'
+let g:netrw_dirhist_2='/Users/norikakizawa/Projects/programmingBitcoin/scriptless_script/node_modules/elliptic/lib/elliptic/ec'
+let g:netrw_dirhist_3='/Users/norikakizawa/Projects/Vuelog/src/views'
+let g:netrw_dirhist_4='/Users/norikakizawa/Projects/cryptoNFC/web/src'
+let g:netrw_dirhist_5='/Users/norikakizawa/Projects/cryptoNFC/web'

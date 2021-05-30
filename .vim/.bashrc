@@ -1,28 +1,17 @@
 #!/bin/sh
 
 # PATH
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/share/python:$PATH
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
-export PATH=/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin:$PATH
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
-export PATH="$JAVA_HOME/bin:$PATH"
-export HBASE_HOME="/usr/local/Cellar/hbaouse/1.3.5/libexec"
-export PYTHON3_HOME="/Users/norikakizawa/Library/Python/3.9/bin"
-export PATH="$PYTHON3_HOME:$PATH"
-#export RUSTUP_HOME="/Users/norikakizawa/.rustup:$PATH"
-
-#Command Aliases
-alias hstart="sh /usr/local/Cellar/hadoop/3.2.1_1/sbin/start-all.sh"
-alias hstop="sh /usr/local/Cellar/hadoop/3.2.1_1/sbin/stop-all.sh"
-alias hbase-start="sh /usr/local/Cellar/hbase/1.3.5/bin/start-hbase.sh"
-alias hbase-stop="sh /usr/local/Cellar/hbase/1.3.5/bin/stop-hbase.sh"
-alias tsdb="sh /Users/norikakizawa/Project/neukind/opentsdb/build/tsdb"
-alias activate="source $PYENV_ROOT/versions/anaconda3-4.2.0/bin/activate"
+export GOPATH=~/gocode
+export PATH=$GOPATH/bin:PATH
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:$PATH
+export PYTHONPATH="/Users/norikakizawa/Library/Python/2.7/bin:$PYTHONPATH"
 
 #Aliases
 
-alias h="history"
+
 alias ls="ls -G"
 alias l="ls -lFh"
 alias la="ls -lAFh"
@@ -56,4 +45,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export PATH="/usr/local/opt/unzip/bin:$PATH"
